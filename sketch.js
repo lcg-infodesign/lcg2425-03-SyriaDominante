@@ -1,8 +1,8 @@
 // variabili e colori
 let data; 
-let pageColor = "#FFFCF0";
-let textColor = "#080e54";
-let circleColor = "#080e54";
+let pageColor = "#000032";
+let textColor = "#ffc9dd";
+let circleColor = "#ffc9dd";
 let padding = 100; 
 let scrollOffset = 0; // scorrimento
 let tooltipText = ""; // testo del tooltip
@@ -29,9 +29,9 @@ function draw() {
 
   // Titolo
   textStyle(BOLD);
-  textSize(32);
+  textSize(40);
   fill(textColor);
-  text("Rivers in the World", 100, 80 - scrollOffset);
+  text("RIVERS IN THE WORLD", 100, 70 - scrollOffset);
   
   let x = padding; 
   let y = padding + 60 - scrollOffset; 
@@ -95,8 +95,8 @@ function draw() {
       }
       
       // linea che attraversa i pallini (non ha funzioni per la rappresentazione, è puramente estetica)
-      fill("#080e54");
-      stroke("#080e54");
+      fill(circleColor);
+      stroke(circleColor);
       strokeWeight(1);
       line(x + 950, y + 10, x + 1250, y + 10); 
 
